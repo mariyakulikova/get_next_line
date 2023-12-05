@@ -9,4 +9,3 @@ Etiam et lectus vitae nunc ultrices ultricies.
 Nullam sit amet nunc quis arcu maximus sodales.
 Maecenas et augue sodales erat eleifend ultricies sit amet commodo nisi.
 Aliquam erat volutpat.
-Pellentesque bibendum, nunc sit amet ultricies finibus, massa risus consectetur arcu, non egestas lectus odio ac eros.

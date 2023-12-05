@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 12:14:30 by mkulikov          #+#    #+#             */
-/*   Updated: 2023/12/01 16:33:09 by mkulikov         ###   ########.fr       */
+/*   Updated: 2023/12/05 18:13:03 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,19 @@
 # include <fcntl.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
 
-# define BUFFER_SIZE 42
-# define ENDL '\n'
+# define BUFFER_SIZE 256
+# define ENDL 10
 
 char	*get_next_line(int fd);
-char	*ft_strjoin(char const **s1, char const *s2);
+char	*ft_strjoin(char *s1, char *s2);
+char	*ft_strdup(char *src);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+size_t	ft_strlcpy(char *dest, const char *src, size_t destsize);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strchr(const char *s, int c);
+size_t	ft_strlen(const char *str);
+int	fill_str(char **str, char *buf);
 
 #endif
