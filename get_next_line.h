@@ -18,7 +18,10 @@
 # include <unistd.h>
 # include <stdio.h>
 
-# define BUFFER_SIZE 100
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 100
+# endif
+
 # define ENDL 10
 
 char	*get_next_line(int fd);
