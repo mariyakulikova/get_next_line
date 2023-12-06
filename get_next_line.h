@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 12:14:30 by mkulikov          #+#    #+#             */
-/*   Updated: 2023/12/05 18:13:03 by mkulikov         ###   ########.fr       */
+/*   Updated: 2023/12/06 14:05:35 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <unistd.h>
 # include <stdio.h>
 
-# define BUFFER_SIZE 256
+# define BUFFER_SIZE 100
 # define ENDL 10
 
 char	*get_next_line(int fd);

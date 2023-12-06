@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 12:14:15 by mkulikov          #+#    #+#             */
-/*   Updated: 2023/12/05 18:09:12 by mkulikov         ###   ########.fr       */
+/*   Updated: 2023/12/06 16:27:35 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ char	*ft_strjoin(char *s1, char *s2)
 	size_t	len;
 	char	*str;
 
+	if (!s2)
+		s2 = ft_strdup("");
 	len = ft_strlen(s1) + ft_strlen(s2);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
@@ -41,6 +43,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	*str = '\0';
 	return (str - len);
 }
+
 char	*ft_strchr(const char *s, int c)
 {
 	char	*ptr;
@@ -71,6 +74,7 @@ char	*ft_strdup(char *src)
 	*str = '\0';
 	return (str - len);
 }
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*str;
@@ -91,6 +95,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(str, s + start, len + 1);
 	return (str);
 }
+
 size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 {
 	size_t	srclen;
@@ -105,6 +110,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 	}
 	return (srclen);
 }
+
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*ptrdst;
