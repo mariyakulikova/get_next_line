@@ -1,15 +1,15 @@
 #include "get_next_line.h"
+#include <stdio.h>
 
 int	main(void)
 {
 	int		fd;
-	// char	*buf = "hello\nthere!";
 	char	*line;
 
-	fd = open("text.txt", O_RDONLY);
+	fd = open("main.c", O_RDONLY);
 	line = get_next_line(fd);
 	int i = 5;
-	while (i-- > 0)
+	while (line)
 	{
 		printf("%s", line);
 		line = get_next_line(fd);
