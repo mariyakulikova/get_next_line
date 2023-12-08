@@ -6,12 +6,12 @@ int	main(void)
 	int		fd;
 	char	*line;
 
-	fd = open("main.c", O_RDONLY);
+	fd = open("text.txt", O_RDONLY);
 	line = get_next_line(fd);
-	int i = 5;
 	while (line)
 	{
 		printf("%s", line);
+		free(line);
 		line = get_next_line(fd);
 	}
 	close(fd);
