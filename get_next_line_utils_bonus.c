@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 15:50:21 by mkulikov          #+#    #+#             */
-/*   Updated: 2023/12/10 15:52:28 by mkulikov         ###   ########.fr       */
+/*   Updated: 2023/12/11 11:44:25 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,8 +75,8 @@ char	*ft_strchr(const char *s, int c)
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int		i;
 	char	*str;
+	size_t	i;
 	size_t	substrlen;
 
 	if (!s)

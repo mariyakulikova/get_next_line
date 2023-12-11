@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 15:51:18 by mkulikov          #+#    #+#             */
-/*   Updated: 2023/12/10 15:56:31 by mkulikov         ###   ########.fr       */
+/*   Updated: 2023/12/11 11:38:51 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,9 @@ char	*ft_read(int fd, char *buf, char *stash)
 		stash = ft_strjoin(temp, buf);
 		free(temp);
 		if (ft_strchr(stash, ENDL))
-			return (stash);
+			break ;
 	}
+	return (stash);
 }
 
 char	*ft_get_line(char **stash)

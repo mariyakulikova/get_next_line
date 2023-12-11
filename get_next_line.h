@@ -6,17 +6,15 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 12:14:30 by mkulikov          #+#    #+#             */
-/*   Updated: 2023/12/06 14:05:35 by mkulikov         ###   ########.fr       */
+/*   Updated: 2023/12/11 12:14:24 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# include <fcntl.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
