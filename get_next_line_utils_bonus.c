@@ -6,11 +6,11 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 15:50:21 by mkulikov          #+#    #+#             */
-/*   Updated: 2023/12/11 11:44:25 by mkulikov         ###   ########.fr       */
+/*   Updated: 2023/12/12 13:36:05 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 size_t	ft_strlen(const char *str)
 {

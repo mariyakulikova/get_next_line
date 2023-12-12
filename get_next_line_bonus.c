@@ -6,11 +6,11 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 15:51:18 by mkulikov          #+#    #+#             */
-/*   Updated: 2023/12/11 11:38:51 by mkulikov         ###   ########.fr       */
+/*   Updated: 2023/12/12 13:35:49 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_read(int fd, char *buf, char *stash)
 {
